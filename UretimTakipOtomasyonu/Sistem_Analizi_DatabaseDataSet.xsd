@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sistem_Analizi_DatabaseDataSet" targetNamespace="http://tempuri.org/Sistem_Analizi_DatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/Sistem_Analizi_DatabaseDataSet.xsd" xmlns="http://tempuri.org/Sistem_Analizi_DatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Sistem_Analizi_DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Sistem_Analizi_DatabaseConnectionString (Settings)" PropertyReference="ApplicationSettings.UretimAgaci.Properties.Settings.GlobalReference.Default.Sistem_Analizi_DatabaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="makineTableAdapter" GeneratorDataComponentClassName="makineTableAdapter" Name="makine" UserDataComponentName="makineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Sistem_Analizi_DatabaseConnectionString (Settings)" DbObjectName="makine" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT islevi FROM makine</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="islevi" DataSetColumn="islevi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Sistem_Analizi_DatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Sistem_Analizi_DatabaseDataSet" msprop:Generator_UserDSName="Sistem_Analizi_DatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="makine" msprop:Generator_TableClassName="makineDataTable" msprop:Generator_TableVarName="tablemakine" msprop:Generator_TablePropName="makine" msprop:Generator_RowDeletingName="makineRowDeleting" msprop:Generator_RowChangingName="makineRowChanging" msprop:Generator_RowEvHandlerName="makineRowChangeEventHandler" msprop:Generator_RowDeletedName="makineRowDeleted" msprop:Generator_UserTableName="makine" msprop:Generator_RowChangedName="makineRowChanged" msprop:Generator_RowEvArgName="makineRowChangeEvent" msprop:Generator_RowClassName="makineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="islevi" msprop:Generator_ColumnVarNameInTable="columnislevi" msprop:Generator_ColumnPropNameInRow="islevi" msprop:Generator_ColumnPropNameInTable="isleviColumn" msprop:Generator_UserColumnName="islevi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
